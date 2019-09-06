@@ -5,5 +5,60 @@
     <title>Age Calculator</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h3>Super Galactic Age Calculator</h3>
+      </div>
+      <form class="mainform" action="index.html" method="post">
+        <label for="userAge">Enter your age in years: </label>
+        <input type="text" id="userAge" value="" autofocus>
+        <br>
+        <label for="userAge">Enter your life expectancy in years: </label>
+        <input type="text" id="userLife" value="100">
+        <br>
+        <button type="submit" class="btn btn-info" name="button">Calculate Super Galactic Age!</button>
+      </form>
+      <br>
+      <div class="output">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card card-info">
+              <div class="card-header mercuryHeading">
+                <p>Mercury Age</p>
+              </div>
+              <div class="card-body mercuryBody">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-info">
+              <div class="card-header venusHeading">
+                <p>Venus Age</p>
+              </div>
+              <div class="card-body venusBody">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-info">
+              <div class="card-header marsHeading">
+                <p>Mars Age</p>
+              </div>
+              <div class="card-body marsBody">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-info">
+              <div class="card-header jupiterHeading">
+                <p>Jupiter Age</p>
+              </div>
+              <div class="card-body jupiterBody">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

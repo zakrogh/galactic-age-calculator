@@ -1,22 +1,22 @@
 import { Calculator } from './../src/calculator.js';
-describe('Calculator'), function (){
+describe('Calculator', function (){
   let calculator;
   beforeEach(function(){
-    calculator = new Calculator(50);
+    calculator = new Calculator(50, 100);
   });
-  it('test if a persons age appears correctly'), function(){
+  it('test if a persons age appears correctly', function(){
     expect(calculator.age).toEqual(50);
-  }
-  it('test if a persons age on Mercury appears correctly'), function(){
-    //dostuff
-  }
-  it('test if a persons age on Venus appears correctly'), function(){
-    //dostuff
-  }
-  it('test if a persons age on Mars appears correctly'), function(){
-    //dostuff
-  }
-  it('test if a persons age on Jupiter appears correctly'), function(){
-    //dostuff
-  }
-}
+  });
+  it('test if a persons age on Mercury appears correctly', function(){
+    expect(calculator.mercuryAge()).toEqual(208);
+  });
+  it('test if a persons age on Venus appears correctly', function(){
+    expect(calculator.venusAge()).toEqual(80);
+  });
+  it('test if a persons age on Mars appears correctly', function(){
+    expect(calculator.marsAge()).toEqual(26);
+  });
+  it('test if a persons age on Jupiter appears correctly', function(){
+    expect(calculator.jupiterAge()).toEqual(4);
+  });
+});
