@@ -6,7 +6,7 @@
 
 ## Description
 
-_todo:fill this in_
+_This site asks the user for their age in years, and their life expectancy in years (default 100), then displays what their age and life expectancy would be on other planets. If their age is greater than their life expectancy, then the duration that they have outlived their life expectancy is displayed._
 
 ## Setup/Installation Requirements
 
